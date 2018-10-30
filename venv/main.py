@@ -82,8 +82,5 @@ TestingDataWithoutLabels = getDataWithoutLabels(TestingData)
 # określenie etykiet do danych testujących
 CheckedLabels = kNN.predict(TestingDataWithoutLabels)
 
-# print("Score: " , kNN.score(TestingData, CheckedLabels))
-# print("Total rows: ", len(TestingData))
-
 accuracy = (kNN.score(TestingData, CheckedLabels) / len(TestingData)) * 100
 print("Accuracy of our model is equal ", str(round(accuracy, 2)), "%")
